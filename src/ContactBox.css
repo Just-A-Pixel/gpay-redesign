@@ -1,0 +1,8 @@
+.white-box {
+    height: 100px;
+    background-color: #e6e6e6;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    box-shadow: 0 -5px 30px 5px rgba(49, 49, 49, 0.486);
+}
