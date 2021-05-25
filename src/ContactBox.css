@@ -5,4 +5,7 @@
     bottom: 40px;
     width: 100%;
     box-shadow: 0 -5px 30px 5px rgba(49, 49, 49, 0.486);
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
