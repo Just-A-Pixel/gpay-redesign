@@ -6,18 +6,33 @@ function Pay() {
         <div>
             <h1>Choose Contact</h1>
             <input type="text"/>
+            
             <Link to={{
                 pathname: "/upi",
                 state: {
-                  contact: 'rah',
+                  contact: 'Contact 1',
                 }
-            }}>dwadawd
-                
-            </Link>
-            <div>Contact 1 </div>
-            <div>Contact 2 </div>
-            <div>Contact 3 </div>
-            <div>Contact 4 </div>
+            }}><div>Contact 1 </div></Link>
+            
+            
+            <Link to={{
+                pathname: "/upi",
+                state: {
+                  contact: 'Contact 2',
+                }
+            }}><div>Contact 2 </div></Link>
+            <Link to={{
+                pathname: "/upi",
+                state: {
+                  contact: 'Contact 3',
+                }
+            }}><div>Contact 3 </div></Link>
+            <Link to={{
+                pathname: "/upi",
+                state: {
+                  contact: 'Contact 4',
+                }
+            }}><div>Contact 4 </div></Link>
         </div>
     )
 }

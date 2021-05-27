@@ -1,0 +1,8 @@
+.pay_popup{
+    background-color: rgb(80, 186, 228);
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin-left: 50%;
+    box-shadow: 0 0 10px 1000px rgba(87, 87, 87, 0.541);
+}

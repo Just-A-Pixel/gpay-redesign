@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './ContactBox.css'
 import { motion } from "framer-motion"
 
 function ContactBox() {
-    const [active, setActive] = useState(true)
+    // const [active, setActive] = useState(true)
     return (
         <motion.div className="white-box"
         initial = {{height: 0, opacity: 0.3}}
