@@ -1,40 +1,62 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import back from "./img/back.png";
+import "./Pay.css";
+
+const contacts = [
+  "Samantha Singh",
+  "Subhojit Yadav",
+  "Elvish Ganguly",
+  "Namuna Singh",
+];
 
 function Pay() {
+  const [contact, setContact] = useState("");
+
+  const matchContact = (e) => {
+    setContact(e.target.value);
+  };
+
+  let contactField = contacts.map((x) => {
     return (
-        <div>
-            <h1>Choose Contact</h1>
-            <input type="text"/>
-            
-            <Link to={{
-                pathname: "/upi",
-                state: {
-                  contact: 'Contact 1',
-                }
-            }}><div>Contact 1 </div></Link>
-            
-            
-            <Link to={{
-                pathname: "/upi",
-                state: {
-                  contact: 'Contact 2',
-                }
-            }}><div>Contact 2 </div></Link>
-            <Link to={{
-                pathname: "/upi",
-                state: {
-                  contact: 'Contact 3',
-                }
-            }}><div>Contact 3 </div></Link>
-            <Link to={{
-                pathname: "/upi",
-                state: {
-                  contact: 'Contact 4',
-                }
-            }}><div>Contact 4 </div></Link>
-        </div>
-    )
+      <Link
+        to={{
+          pathname: "/upi",
+          state: {
+            contact: x,
+          },
+        }}
+        style={{ textDecoration: "none" }}
+      >
+        <div className="pay__contact">{x} </div>
+      </Link>
+    );
+  });
+
+  return (
+    <div className="pay">
+      {/* <h1 className="pay__title">Choose Contact</h1> */}
+      <Link to="/">
+        <img alt='' src={back} style={{ position: "absolute" }} />
+      </Link>
+      <div className="pay__outerinput">
+        <input
+          className="pay__input"
+          placeholder="Choose contact"
+          type="text"
+          onChange={matchContact}
+          value={contact}
+        />
+      </div>
+      <br />
+      {contact.length < 4 ? (
+        <h2 className="pay__warning">Length should be 4</h2>
+      ) : (
+        ""
+      )}
+      {contactField}
+    </div>
+  );
 }
 
-export default Pay
+export default Pay;

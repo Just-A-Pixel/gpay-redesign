@@ -1,8 +1,54 @@
-.pay_popup{
-    background-color: rgb(80, 186, 228);
+.upi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upi__title {
+    text-align: center;
+    color: rgb(61, 96, 212);
+}
+
+.upi__text {
     width: 200px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px;
+}
+
+.upi__warning {
+    font-size: 13px;
+    text-align: center;
+    color: rgb(248, 88, 88);
+    /* letter-spacing: ; */
+}
+
+.upi__button {
+    text-align: center;
+    background-color: #6057f0;
+    color: rgb(243, 242, 242);
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pay_popup{
+    background-color: rgb(223, 223, 223);
+    width: 30%;
     height: 100px;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 30%;
     box-shadow: 0 0 10px 1000px rgba(87, 87, 87, 0.541);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
+
+
+
+

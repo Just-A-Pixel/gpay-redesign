@@ -12,5 +12,13 @@
 
 .white-box__headers {
     display: flex;
-    
+    justify-content: left;
+}
+
+.white-box__recents, .white-box__favourites {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.white-box__favourites {
+    margin-left: 30px;
 }

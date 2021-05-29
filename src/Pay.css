@@ -1,0 +1,41 @@
+
+.pay__title {
+    text-align: center;
+    color: rgb(35, 35, 36);
+}
+
+.pay__outerinput {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pay__input {
+    outline: none;
+    border: none;
+    border-bottom: solid;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pay__warning {
+    text-align: center;
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+}
+
+.pay__contact {
+    text-align: center;
+    background-color: #6057f0;
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
