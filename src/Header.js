@@ -5,20 +5,20 @@ import bell from "./img/bell.png";
 import man1 from "./img/man1.png";
 import "./header.css";
 
-function Header() {
+function Header({dark}) {
   const [open, setOpen] = useState(false);
   return (
     <div className="header">
       <img src={photo} className="header__image" alt="" />
 
-      <div>
+      <div style={dark?{color:'white'}:{}}>
         Hi,Julia
         <br />
         juliasingh@gmail.com
       </div>
 
-      <Switcher />
-      <img src={bell} onClick={(e) => setOpen(true)} height="30px" alt="" />
+      {/* <Switcher /> */}
+      <img src={bell} onClick={(e) => setOpen(true)} height="30px" alt="" style={{marginLeft:'100px', marginTop: '5px'}}/>
 
       <div
         className={

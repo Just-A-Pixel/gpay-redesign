@@ -18,6 +18,7 @@
 .white-box__recents, .white-box__favourites {
     margin-left: 10px;
     margin-top: 20px;
+    /* background-color: rgba(190, 190, 190, 0); */
 }
 .white-box__favourites {
     margin-left: 30px;

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import back from "./img/back.png";
-import TextField from '@material-ui/core/TextField';
+import TextField from "@material-ui/core/TextField";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 import "./UPI.css";
 
@@ -68,35 +69,62 @@ function UPI() {
         Pay
       </h2>
 
-      <div
-        className="pay_popup"
-        style={pay ? { display: "block" } : { display: "none" }}
-      >
-        <span>Paid!</span>
-        <br />
-        <Link to="/">Okay</Link>
+      {/* Pay popup */}
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="pay_popup"
+          style={pay ? { display: "block" } : { display: "none" }}
+        >
+          <CheckCircleIcon style={{ fontSize: "40px", color: "green" }} />{" "}
+          <br />
+          <span>Paid!</span>
+          <br /> <br />
+          <Link
+            to="/"
+            className="upi__button"
+            style={{ textDecoration: "none" }}
+          >
+            Okay
+          </Link>
+        </div>
       </div>
 
+      {/* Pay later */}
       <h2 className="upi__button" onClick={(e) => setSchedule(true)}>
         Pay Later
       </h2>
 
-      <div
-        className="pay_popup"
-        style={schedule ? { display: "block" } : { display: "none" }}
-      >
-        <TextField
-        id="datetime-local"
-        label="Next appointment"
-        type="datetime-local"
-        defaultValue="2017-05-24T10:30"
-        // className={classes.textField}
-        InputLabelProps={{
-          shrink: true,
-        }}
-      />
-        <br />
-        <Link to="/">Okay</Link>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="pay_popup"
+          style={
+            schedule ? { display: "block", width: "55%" } : { display: "none" }
+          }
+        >
+          <TextField
+            id="datetime-local"
+            label="Schedule Payment"
+            type="datetime-local"
+            defaultValue="2017-05-24T10:30"
+            // className={classes.textField}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <br />
+          <Link
+            to="/"
+            className="upi__button"
+            style={{
+              textDecoration: "none",
+              position: "relative",
+              top: "20px",
+            }}
+          >
+            Okay
+          </Link>
+        </div>
       </div>
     </div>
   );

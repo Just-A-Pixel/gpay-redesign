@@ -14,7 +14,7 @@ const PurpleBox = () => {
     >
       <div style={{display:'flex', justifyContent:'space-around'}}>
         <Link to="/check" style={{textDecoration: 'none'}}><div className="slider-box__button"> Check Balance</div></Link>
-        <div className="slider-box__button"> Switch Account</div>
+        <Link to="/switch" style={{textDecoration: 'none'}}><div className="slider-box__button"> Switch Account</div></Link>
       </div>
     </motion.div>
   );

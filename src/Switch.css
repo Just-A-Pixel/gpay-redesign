@@ -1,0 +1,13 @@
+.switch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch__img {
+    /* height: 40px; */
+    margin-top: 20px;
+    width: 200px;
+    box-shadow: 0 0 8px 0 rgb(83, 83, 83);
+}
