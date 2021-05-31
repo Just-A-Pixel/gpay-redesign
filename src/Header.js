@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Switcher from "@material-ui/core/Switch";
+// import Switcher from "@material-ui/core/Switch";
 import photo from "./img/smile.png";
 import bell from "./img/bell.png";
 import man1 from "./img/man1.png";

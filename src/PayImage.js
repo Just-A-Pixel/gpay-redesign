@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import smile from "./img/smile.png";
+// import smile from "./img/smile.png";
 
 function PayImage({img, x}) {
   return (
@@ -14,7 +14,7 @@ function PayImage({img, x}) {
         }}
         style={{ textDecoration: "none" }}
       >
-        <img src={img} />
+        <img src={img} alt=''/>
       </Link>
     </div>
   );

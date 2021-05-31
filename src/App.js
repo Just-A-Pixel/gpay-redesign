@@ -43,7 +43,7 @@ const App = () => {
           <Header dark={dark} />
 
           <br />
-          <img src={bank} className="show__bank" />
+          <img src={bank} alt='' className="show__bank" />
           <div style={{ position: "absolute", right:'0', top: '0' }}>
             <Switcher onClick={(e) => setDark(!dark)} />
           </div>

@@ -23,11 +23,11 @@ function SwitchAccount({setBank}) {
         />
       </Link>
       <div className="switch">
-        <Link to="/"> <img className="switch__img" src={bank.pnb} onClick={e => setBank(bank.pnb)}/></Link>
+        <Link to="/"> <img className="switch__img" alt='' src={bank.pnb} onClick={e => setBank(bank.pnb)}/></Link>
            
-        <Link to="/"> <img className="switch__img" src={bank.hdfc} onClick={e => setBank(bank.hdfc)}/></Link>
-        <Link to="/"> <img className="switch__img" src={bank.sbi} onClick={e => setBank(bank.sbi)}/></Link>
-        <Link to="/"> <img className="switch__img" src={bank.ind} onClick={e => setBank(bank.ind)}/></Link>
+        <Link to="/"> <img className="switch__img" alt='' src={bank.hdfc} onClick={e => setBank(bank.hdfc)}/></Link>
+        <Link to="/"> <img className="switch__img" alt='' src={bank.sbi} onClick={e => setBank(bank.sbi)}/></Link>
+        <Link to="/"> <img className="switch__img"  alt='' src={bank.ind} onClick={e => setBank(bank.ind)}/></Link>
         </div>
       <br />
         </>

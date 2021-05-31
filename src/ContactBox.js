@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import smile from './img/smile.png';
 import man1 from './img/man1.png';
 import './ContactBox.css'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 import PayImage from './PayImage';
 

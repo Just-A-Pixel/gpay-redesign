@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import back from "./img/back.png";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+// import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 function CheckBalance() {
   const [open, setOpen] = useState(false);
