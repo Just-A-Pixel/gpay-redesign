@@ -5,7 +5,7 @@ import back from "./img/back.png";
 
 function Passbook() {
   return (
-    <div>
+    <div style={{overflow: 'scroll'}}>
       <br />
       <Link to="/">
         <img
