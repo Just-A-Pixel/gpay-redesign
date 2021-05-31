@@ -9,3 +9,10 @@
     border-bottom-left-radius: 0;
     /* box-shadow: 0 -5px 40px 3px rgba(49, 49, 49, 0.329); */
   }
+
+  .slider-box__button {
+    color: white;
+    border: solid 1px;
+    margin-top: 20px;
+    padding: 10px;
+  }

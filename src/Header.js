@@ -12,9 +12,9 @@ function Header() {
       <img src={photo} className="header__image" alt="" />
 
       <div>
-        Hi,Krishangi
+        Hi,Julia
         <br />
-        pandeykrishangi@gmail.com
+        juliasingh@gmail.com
       </div>
 
       <Switcher />

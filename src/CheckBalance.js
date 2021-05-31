@@ -23,8 +23,8 @@ function CheckBalance() {
       <h1>Enter UPI</h1>
       <input type="text" />
       <div className="pay_popup" style={open?{display: 'block'}: {display: 'none'}}>
-<span>Paid!</span>
-<Link to="/">Ok</Link>
+<span>$8674</span> <br/>
+<Link to="/">Back to home</Link>
             </div>
     </div>
   );
