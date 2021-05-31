@@ -63,7 +63,7 @@ const App = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginTop: "70px",
+                marginTop: "40px",
               }}
             >
               <ContactlessIcon style={{ fontSize: 200, color: "#6057f0" }} />
