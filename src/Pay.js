@@ -8,6 +8,10 @@ const contacts = [
   "Subhojit Yadav",
   "Elvish Ganguly",
   "Namuna Singh",
+  "Jayanth Pandey",
+  "Raj Kapoor",
+  "Siddhart Malhotra",
+  "Joe Obama"
 ];
 
 function Pay() {

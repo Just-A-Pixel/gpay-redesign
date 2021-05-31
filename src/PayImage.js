@@ -15,6 +15,7 @@ function PayImage({img, x}) {
         style={{ textDecoration: "none" }}
       >
         <img src={img} alt=''/>
+        <h6 style={{marginTop:0, position:'relative', left: '-10px', color: 'black', fontWeight:'300', fontSize: '12px'}}>{x}</h6>
       </Link>
     </div>
   );

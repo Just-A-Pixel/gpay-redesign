@@ -38,6 +38,8 @@ const App = () => {
         </Route>
         <Route path="/passbook">
           <Passbook />
+          <Navbar dark={dark} />
+
         </Route>
         <Route path="/">
           <Header dark={dark} />
