@@ -26,10 +26,40 @@
     right: 0;
     box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.336);
     width: 100vw;
-
+    overflow: scroll;
 }
 
 .header__notification__open {
-    /* display: block; */
+    display: block;
     width: 100vw;
+    /* overflow: 'scroll'; */
+
+}
+
+.notification {
+    display: flex;
+    /* flex-direction: column; */
+    /* overflow: 'scroll'; */
+}
+
+.notification__middle > h1 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.notification__middle > h6 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 0;
+    color: rgb(236, 29, 81);
+}
+
+.paid {
+    color: green;
+}
+
+hr {
+    width: 400px;
 }

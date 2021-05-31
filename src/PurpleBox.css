@@ -12,7 +12,10 @@
 
   .slider-box__button {
     color: white;
-    border: solid 1px;
-    margin-top: 20px;
+    border: none 1px;
+    margin-top: 30px;
     padding: 10px;
+    background-color: 
+    #3f35bc;
+    border-radius: 10px;
   }
